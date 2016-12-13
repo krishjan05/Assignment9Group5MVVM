@@ -20,9 +20,12 @@ namespace Assignment9Group5MVVM
     /// </summary>
     public partial class MainWindow : Window
     {
+        ItemModel im;
         public MainWindow()
         {
             InitializeComponent();
+            im = new ItemModel();
+            DataContext = im;
         }
     }
 }
